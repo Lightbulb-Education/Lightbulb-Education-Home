@@ -100,6 +100,24 @@ const aboutContent = Vue.component('about-content', {
 `
 })
 
+const underConstructionContent = Vue.component('404-content', {
+  template: `<section class="hero is-success is-fullheight-with-navbar">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered content">
+        <h1 class="title is-1">
+          This page is underconstruction. Please come back later.
+        </h1>
+        <a class="button is-link is-rounded" href="./">
+          <span>Back to home</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+`
+})
+
 Vue.component('nav-bar', {
   template: `<nav class="navbar is-dark">
       <div class="container">
@@ -137,7 +155,8 @@ const routes = [
   { path: '/', component: homeContent },
   { path: '/home', component: homeContent },
   { path: '/formsplus', component: formsPlusContent },
-  { path: '/about', component: aboutContent}
+  { path: '/about', component: aboutContent},
+  { path: '/pd', component: underConstructionContent}
   // { path: '/bar', component: Bar }
 ]
 
