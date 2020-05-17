@@ -42,7 +42,7 @@ const formsPlusContent = Vue.component('forms-plus-content', {
               <span>Install</span>
             </a>
             <a class="button is-rounded" href="" target="_top">Chrome Web Store</a>
-            <a class="button is-rounded">
+            <a class="button is-rounded" href="https://github.com/jchacko11/eliminate-answers">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
@@ -87,6 +87,24 @@ const aboutContent = Vue.component('about-content', {
 </section>`
 })
 
+const underConstructionContent = Vue.component('404-content', {
+  template: `<section class="hero is-success is-fullheight-with-navbar">
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered content">
+        <h1 class="title is-1">
+          This page is underconstruction. Please come back later.
+        </h1>
+        <a class="button is-link is-rounded" href="./">
+          <span>Back to home</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+`
+})
+
 Vue.component('nav-bar', {
     template: `<nav class="navbar is-dark">
       <div class="container">
@@ -120,11 +138,12 @@ Vue.component('nav-bar', {
 // `Vue.extend()`, or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-    {path: '/', component: homeContent},
-    {path: '/home', component: homeContent},
-    {path: '/formsplus', component: formsPlusContent},
-    {path: '/about', component: aboutContent}
-    // { path: '/bar', component: Bar }
+  { path: '/', component: homeContent},
+  { path: '/home', component: homeContent},
+  { path: '/formsplus', component: formsPlusContent},
+  { path: '/about', component: aboutContent},
+  { path: '/pd', component: underConstructionContent}
+  // { path: '/bar', component: Bar }
 ]
 
 // 3. Create the router instance and pass the `routes` option
