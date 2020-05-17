@@ -1,0 +1,11 @@
+.content {
+  max-width: calc(40% + 12rem) !important;
+}
+.navbar-item a.kofi-button{
+  border-radius: 290486px !important;
+  padding-left: calc(1em + .25em) !important;
+  padding-right: calc(1em + .25em) !important;
+}
+.navbar{
+  max-height: 3.25rem;
+}
