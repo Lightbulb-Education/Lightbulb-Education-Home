@@ -25,7 +25,7 @@ const formsPlusContent = Vue.component('forms-plus-content', {
     template: `<section class="hero is-success is-fullheight-with-navbar">
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
-        <div class="container has-text-centered content">
+        <div class="container has-text-centered page-content">
           <h1 class="title is-2">
             Forms+ is a Chrome extension that provides quality of life improvements for Google Forms.
           </h1>
@@ -95,11 +95,11 @@ const underConstructionContent = Vue.component('404-content', {
     <div class="hero-body">
       <div class="container has-text-centered content">
         <h1 class="title is-1">
-          This page is underconstruction. Please come back later.
+          This page is under construction. Please check back later.
         </h1>
-        <a class="button is-link is-rounded" href="./">
+        <router-link class="button is-link is-rounded" to="/">
           <span>Back to home</span>
-        </a>
+        </router-link>
 
       </div>
     </div>
