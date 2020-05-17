@@ -6,7 +6,7 @@ const homeContent = Vue.component('home-hero-content', {
     template: `<section class="hero is-link is-fullheight-with-navbar">
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
-        <div class="container has-text-centered content">
+        <div class="container has-text-centered page-content">
           <h1 class="title is-2">
             Lightbulb Education is an educational services company, creating a variety of solutions for implementing technology within the classroom.
 
@@ -57,34 +57,36 @@ const formsPlusContent = Vue.component('forms-plus-content', {
 const aboutContent = Vue.component('about-content', {
     template: `    
 <!-- Hero content: will be in the middle -->
-<section class="section has-background-link has-text-white">
-	<div class="container">
-		<div class="content is-large">
-			<h1>About</h1>
-			<p>
-                Founded by two high school students, we create technology based solutions for schools, especially in regards to helping students learn to code and helping teachers use technology to better impact their students.
-            </p>
-			<p>
-                If you're a student interested in learning how to code, check out Lightbulb Edu Code! It's an online learning platform centered around learning by creating projects.
-            </p>
-			<a class="button is-rounded" href="https://code.lightbulb.education/">
-				<span>Learn to code!</span>
-			</a>
-			<p>
-                    If you're a technology education specialist and you want to see how teachers can better use technology in the classroom, feel free to reach out to us! We do consulting as well as professional development training sessions.
-                  </p>
-			<a class="button is-rounded" href="mailto:contact@lightbulb.education">
-				<span>Contact us</span>
-			</a>
-			<p>
-                    And if you're a human and you use Google Forms, check out our Google Chrome extension Forms+. This extension adds several quality of life improvements to Google Forms that you're sure to enjoy.
-                  </p>
-			<a class="button is-rounded" href="https://chrome.google.com/webstore/category/extensions">
-				<span>Get Forms+</span>
-			</a>
-		</div>
-	</div>
-</section>`
+    <section class="section has-background-white-ter has-text-grey-darker">
+        <div class="container">
+            <div class="content is-large">
+                <h1 class="has-text-grey-darker">About</h1>
+                <p class="subtitle is-3">
+                    Founded by two high school students, Lightbulb Education creates technology based solutions for
+                    schools, specializing in <b>helping students learn to code</b> and <b>helping teachers use technology more
+                    effectively</b>.
+                </p>
+                <p>
+                    If you're a student interested in learning how to code, check out 
+                    <a class="" href="https://code.lightbulb.education/">Lightbulb
+                    Edu Code</a>! It's an online learning platform centered around learning by creating projects.
+                </p>
+
+                <p>
+                    If you're a technology education specialist and you want to see how teachers can better use
+                    technology in the classroom, <a class="" href="mailto:contact@lightbulb.education">feel
+                    free to reach out to us</a>! We do consulting as well as professional development training sessions.
+                </p>
+
+                <p>
+                    And if you're a human and you use Google Forms, 
+                    <a class="" href="https://chrome.google.com/webstore/category/extensions">check out
+                    our Google Chrome extension Forms+</a>. This extension adds several quality of life improvements to
+                    Google Forms that you're sure to enjoy.
+                </p>
+            </div>
+        </div>
+    </section>`
 })
 
 Vue.component('nav-bar', {
