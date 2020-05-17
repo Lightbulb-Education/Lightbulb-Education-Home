@@ -28,28 +28,20 @@ const formsPlus = Vue.component('forms-plus-content', {
         <div class="container has-text-centered content">
           <h1 class="title is-2">
             Forms+ is a Chrome extension that provides quality of life improvements for Google Forms.
-
           </h1>
           
           <h3 class="title is-4">
             This includes the ability to eliminate answers for test/quiz scenarios, unselecting radio buttons by clicking on them again, and see a character count for text input questions.
-
           </h3>
-
-          
+   
           <div class="buttons is-centered">
-
-
             <a class="button is-link is-rounded">
               <span class="icon">
                 <i class="fa fa-download"></i>
               </span>
               <span>Install</span>
             </a>
-
             <a class="button is-rounded" href="" target="_top">Chrome Web Store</a>
-
-            
             <a class="button is-rounded">
               <span class="icon">
                 <i class="fab fa-github"></i>
