@@ -42,7 +42,7 @@ const formsPlusContent = Vue.component('forms-plus-content', {
               <span>Install</span>
             </a>
             <a class="button is-rounded" href="" target="_top">Chrome Web Store</a>
-            <a class="button is-rounded">
+            <a class="button is-rounded" href="https://github.com/jchacko11/eliminate-answers">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
