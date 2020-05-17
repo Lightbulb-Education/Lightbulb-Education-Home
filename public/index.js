@@ -7,12 +7,12 @@ const homeContent = Vue.component('home-hero-content', {
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered page-content">
-          <h1 class="title is-2">
+          <h1 class="title is-size-3-mobile is-2">
             Lightbulb Education is an educational services company, creating a variety of solutions for implementing technology within the classroom.
 
           </h1>
           <div class="buttons is-centered">
-            <a class="button is-light is-success is-rounded" href="https://code.lightbulb.education" target="_top">Lightbulb Edu Code</a>
+            <a class="button is-light is-success is-rounded" href="https://code.lightbulb.education" target="_blank">Lightbulb Edu Code</a>
             <router-link class="button is-light is-primary is-rounded" to="/formsplus">Forms+</router-link>
             <router-link class="button is-light is-link is-rounded" to="/pd">Past PD Sessions</router-link>
           </div>
@@ -26,11 +26,11 @@ const formsPlusContent = Vue.component('forms-plus-content', {
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered page-content">
-          <h1 class="title is-2">
+          <h1 class="title is-size-3-mobile is-2">
             Forms+ is a Chrome extension that provides quality of life improvements for Google Forms.
           </h1>
 
-          <h3 class="title is-4">
+          <h3 class="title is-size-5-mobile is-4">
             This includes the ability to eliminate answers for test/quiz scenarios, unselecting radio buttons by clicking on them again, and see a character count for text input questions.
           </h3>
 
@@ -41,8 +41,8 @@ const formsPlusContent = Vue.component('forms-plus-content', {
               </span>
               <span>Install</span>
             </a>
-            <a class="button is-rounded" href="" target="_top">Chrome Web Store</a>
-            <a class="button is-rounded" href="https://github.com/jchacko11/eliminate-answers">
+            <a class="button is-rounded" href="" target="_blank">Chrome Web Store</a>
+            <a class="button is-rounded" href="https://github.com/jchacko11/eliminate-answers" target="_blank">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
@@ -57,7 +57,7 @@ const formsPlusContent = Vue.component('forms-plus-content', {
 const aboutContent = Vue.component('about-content', {
     template: `    
 <!-- Hero content: will be in the middle -->
-    <section class="section has-background-white-ter has-text-grey-darker">
+    <section class="section">
         <div class="container">
             <div class="content is-large">
                 <h1 class="has-text-grey-darker">About</h1>
@@ -68,19 +68,20 @@ const aboutContent = Vue.component('about-content', {
                 </p>
                 <p>
                     If you're a student interested in learning how to code, check out 
-                    <a class="" href="https://code.lightbulb.education/">Lightbulb
+                    <a class="" href="https://code.lightbulb.education/" target="_blank">Lightbulb
                     Edu Code</a>! It's an online learning platform centered around learning by creating projects.
                 </p>
 
                 <p>
                     If you're a technology education specialist and you want to see how teachers can better use
                     technology in the classroom, <a class="" href="mailto:contact@lightbulb.education">feel
-                    free to reach out to us</a>! We do consulting as well as professional development training sessions.
+                    free to reach out to us at contact@lightbulb.education</a>! We do consulting as well as 
+                    professional development training sessions.
                 </p>
 
                 <p>
                     And if you're a human and you use Google Forms, 
-                    <a class="" href="https://chrome.google.com/webstore/category/extensions">check out
+                    <a class="" href="https://chrome.google.com/webstore/category/extensions" target="_blank">check out
                     our Google Chrome extension Forms+</a>. This extension adds several quality of life improvements to
                     Google Forms that you're sure to enjoy.
                 </p>
@@ -131,6 +132,18 @@ Vue.component('nav-bar', {
         </div>
       </div>
     </nav>`
+})
+
+Vue.component('bottom-footer', {
+    template: `<footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Lightbulb Education</strong> by <a href="https://jchacko.dev" target="_blank">Jonathan Chacko</a> and
+          <a href="https://adamn.dev/" target="_blank">Adam Nguyen</a>.
+        </p>
+        <p>Copyright 2020</p>
+      </div>
+    </footer>`
 })
 
 
