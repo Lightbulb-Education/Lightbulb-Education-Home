@@ -35,13 +35,13 @@ const formsPlusContent = Vue.component('forms-plus-content', {
           </h3>
 
           <div class="buttons is-centered">
-            <a class="button is-link is-rounded">
+            <a class="button is-link is-rounded" onclick="chrome.webstore.install(https://chrome.google.com/webstore/detail/abegkmpbggcbnljjnklblgmiiacopkng)">
               <span class="icon">
                 <i class="fa fa-download"></i>
               </span>
               <span>Install</span>
             </a>
-            <a class="button is-rounded" href="" target="_blank">Chrome Web Store</a>
+            <a class="button is-rounded" href="https://chrome.google.com/webstore/detail/abegkmpbggcbnljjnklblgmiiacopkng" target="_blank">Chrome Web Store</a>
             <a class="button is-rounded" href="https://github.com/jchacko11/eliminate-answers" target="_blank">
               <span class="icon">
                 <i class="fab fa-github"></i>
@@ -55,7 +55,7 @@ const formsPlusContent = Vue.component('forms-plus-content', {
 })
 
 const aboutContent = Vue.component('about-content', {
-    template: `    
+    template: `
 <!-- Hero content: will be in the middle -->
     <section class="section">
         <div class="container">
@@ -67,7 +67,7 @@ const aboutContent = Vue.component('about-content', {
                     effectively</b>.
                 </p>
                 <p>
-                    If you're a student interested in learning how to code, check out 
+                    If you're a student interested in learning how to code, check out
                     <a class="" href="https://code.lightbulb.education/" target="_blank">Lightbulb
                     Edu Code</a>! It's an online learning platform centered around learning by creating projects.
                 </p>
@@ -75,12 +75,12 @@ const aboutContent = Vue.component('about-content', {
                 <p>
                     If you're a technology education specialist and you want to see how teachers can better use
                     technology in the classroom, <a class="" href="mailto:contact@lightbulb.education">feel
-                    free to reach out to us at contact@lightbulb.education</a>! We do consulting as well as 
+                    free to reach out to us at contact@lightbulb.education</a>! We do consulting as well as
                     professional development training sessions.
                 </p>
 
                 <p>
-                    And if you're a human and you use Google Forms, 
+                    And if you're a human and you use Google Forms,
                     <a class="" href="https://chrome.google.com/webstore/category/extensions" target="_blank">check out
                     our Google Chrome extension Forms+</a>. This extension adds several quality of life improvements to
                     Google Forms that you're sure to enjoy.
