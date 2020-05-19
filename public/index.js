@@ -35,13 +35,12 @@ const formsPlusContent = Vue.component('forms-plus-content', {
           </h3>
 
           <div class="buttons is-centered">
-            <a class="button is-link is-rounded" onclick="chrome.webstore.install(https://chrome.google.com/webstore/detail/abegkmpbggcbnljjnklblgmiiacopkng)">
+            <a class="button is-link is-rounded" href="https://chrome.google.com/webstore/detail/abegkmpbggcbnljjnklblgmiiacopkng" target="_blank">
               <span class="icon">
                 <i class="fa fa-download"></i>
               </span>
               <span>Install</span>
             </a>
-            <a class="button is-rounded" href="https://chrome.google.com/webstore/detail/abegkmpbggcbnljjnklblgmiiacopkng" target="_blank">Chrome Web Store</a>
             <a class="button is-rounded" href="https://github.com/jchacko11/eliminate-answers" target="_blank">
               <span class="icon">
                 <i class="fab fa-github"></i>
