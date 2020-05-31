@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "lightbulb-education-home"
+  },
+  "targets": {
+    "lightbulb-education-home": {
+      "hosting": {
+        "home": [
+          "lightbulb-education-home"
+        ]
+      }
+    }
   }
 }
