@@ -145,6 +145,55 @@ Vue.component('bottom-footer', {
     </footer>`
 })
 
+const learningReimagined = Vue.component('lr-pd', {
+    template: `
+        <section class="hero is-info is-fullheight-with-navbar">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+        
+                    <h1 class="title is-size-3-mobile is-2">
+                        Don't Use Technology In the Classroom
+                    </h1>
+        
+                    <h3 class="title is-size-5-mobile is-4">
+                        Presented at Humble ISD Learning Reimagined PD (Summer 2020) and TCCA (Fall 2019)
+                    </h3>
+        
+                    <div class="buttons is-centered">
+                        <a class="button is-link is-rounded"
+                           href="https://docs.google.com/presentation/d/1n5ChhcyR6ZPLWzjGWr_Gs3Yf7iysxNVS5gLS_RpWOvU/edit?usp=sharing"
+                           target="_blank">
+                          <span class="icon">
+                            <i class="fab fa-slideshare"></i>
+                          </span>
+                            <span>Learning Reimagined Presentation</span>
+                        </a>
+        
+                        <a class="button is-danger is-rounded" href="https://files.lightbulb.education/lrhandout"
+                           target="_blank">
+                          <span class="icon">
+                            <i class="fa fa-download"></i>
+                          </span>
+                            <span>Cheat Sheet</span>
+                        </a>
+        
+                        <a class="button is-rounded"
+                           href="https://docs.google.com/presentation/d/1Ru9UebB4d0-AbLcQLWchhHuw4JPhS2Qyvfr_3wL2JDM/edit?usp=sharing"
+                           target="_blank">
+                          <span class="icon">
+                            <i class="fa fa-file"></i>
+                          </span>
+                            <span>TCCA Presentation</span>
+                        </a>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+    `
+})
+
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -156,7 +205,9 @@ const routes = [
   { path: '/home', component: homeContent},
   { path: '/formsplus', component: formsPlusContent},
   { path: '/about', component: aboutContent},
-  { path: '/pd', component: underConstructionContent}
+  { path: '/pd', redirect: '/pd/lr'},
+  { path: '/lr', redirect: '/pd/lr' },
+  { path: '/pd/lr', component: learningReimagined }
   // { path: '/bar', component: Bar }
 ]
 
