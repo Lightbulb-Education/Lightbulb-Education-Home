@@ -227,7 +227,7 @@ const app = new Vue({
 }).$mount('#app')
 
 
-// let app = new Vue({
+// let  app = new Vue({
 //   el: '#app',
 //   data: {
 //     myData: 'Super cool VueJS application 🖖'
