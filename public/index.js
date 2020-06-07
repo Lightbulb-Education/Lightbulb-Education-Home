@@ -1,3 +1,6 @@
+if (window.location.pathname == "/lrfeedback")
+    window.location = ('https://docs.google.com/forms/d/e/1FAIpQLSe490W0BnrgE0STrOk1YpipSLObV7uvA5Ourx4990f9gwqZMg/viewform')
+
 Vue.component('ko-fi-button', {
     template: `<div class=btn-container><a title="Support me on ko-fi.com" class="kofi-button" style="background-color:#29abe0;" href="https://ko-fi.com/I3I51PZ3B" target="_blank"> <span class="kofitext"><img src="https://storage.ko-fi.com/cdn/cup-border.png" class="kofiimg"/>Support us on Ko-fi</span></a></div>`
 })
@@ -90,7 +93,7 @@ const aboutContent = Vue.component('about-content', {
 })
 
 const underConstructionContent = Vue.component('404-content', {
-  template: `<section class="hero is-success is-fullheight-with-navbar">
+    template: `<section class="hero is-success is-fullheight-with-navbar">
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-centered content">
@@ -201,14 +204,15 @@ const learningReimagined = Vue.component('lr-pd', {
 // `Vue.extend()`, or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/', component: homeContent},
-  { path: '/home', component: homeContent},
-  { path: '/formsplus', component: formsPlusContent},
-  { path: '/about', component: aboutContent},
-  { path: '/pd', redirect: '/pd/lr'},
-  { path: '/lr', redirect: '/pd/lr' },
-  { path: '/pd/lr', component: learningReimagined }
-  // { path: '/bar', component: Bar }
+    {path: '/lrfeedback', component: homeContent},
+    {path: '/', component: homeContent},
+    {path: '/home', component: homeContent},
+    {path: '/formsplus', component: formsPlusContent},
+    {path: '/about', component: aboutContent},
+    {path: '/pd', redirect: '/pd/lr'},
+    {path: '/lr', redirect: '/pd/lr'},
+    {path: '/pd/lr', component: learningReimagined}
+    // { path: '/bar', component: Bar }
 ]
 
 // 3. Create the router instance and pass the `routes` option
